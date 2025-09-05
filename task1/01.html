@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivananda | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: powderblue;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header a button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border:none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        header a button:hover {
+            background-color: #000000;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        }
+
+        img {
+            max-width: 300px;
+            border-radius: 50%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #999;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            cursor:pointer;
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <a href="#about"><button>About</button></a>
+        <a href="#education"><button>Education</button></a>
+        <a href="#skills"><button>Skills</button></a>
+        <a href="#projects"><button>Projects</button></a>
+        <a href="#contact"><button>Contact</button></a>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>Sivananda Nammi</h2>
+            <img src="2.jpg" alt="A photo of Sivananda">
+            <h2>Bio</h2>
+            <p>I am a passionate web developer with a focus on front-end technologies.</p>
+            <p>I am currently pursuing my BCA Degree at <em>Gayatri Vidya Parishad College</em>.</p>
+            <p>I have learnt web development from <strong>Code with Swaroop and Edutantr</strong>.</p>
+            <p>I have knowledge and skill on <strong>HTML, CSS, and JavaScript</strong>.</p>
+            <hr>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>BCA (Bachelor of Computer Applications)</strong> – Gayatri Vidya Parishad College (2023–2026)</li>
+                <li><strong>Intermediate</strong> – Sri Basara Junior College (2021–2023)</li>
+                <li><strong>High School</strong> – The Sun School (2020)</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ol>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol> 
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>I built this responsive portfolio website using HTML, CSS, and JavaScript.</td>
+                </tr>
+                <tr>
+                    <td>Python Calculator</td>
+                    <td>Created a basic calculator using Python for simple arithmetic operations.</td>
+                </tr>
+                <tr>
+                    <td>Community Service Project</td>
+                    <td>As part of our community service initiative, we organized an awareness program on the harmful effects of plastic usage for the residents in the areas surrounding our college. Through interactive sessions, informative posters, and real-life examples, we educated people about the environmental and health risks posed by excessive plastic use. We also encouraged them to adopt eco-friendly alternatives and shared simple, practical steps they could follow in their daily lives to reduce plastic consumption. This initiative not only spread valuable information but also inspired many to make more sustainable choices for the well-being of our community and environment.</td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch with me using the form below:</p>
+            <form action="01.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+
+                <label>Interests:</label><br>
+                <input type="checkbox" id="coding" name="interest" value="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="reading" name="interest" value="reading">
+                <label for="reading">Reading</label><br>
+
+                <label for="bio">Bio (max 200 characters):</label><br>
+                <textarea id="bio" name="bio" rows="4" maxlength="200"></textarea><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> Sivananda Nammi | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

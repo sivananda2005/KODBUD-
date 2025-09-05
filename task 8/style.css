@@ -1,0 +1,703 @@
+/* Bella Vista Restaurant - Advanced Animated Experience */
+/* Task 8: Enhanced with Custom Animations and Effects */
+
+/* Custom hero section styling */
+.hero-section {
+    margin-top: 56px;
+}
+
+.hero-icon-container {
+    width: 300px;
+    height: 300px;
+}
+
+.hero-icon {
+    font-size: 8rem;
+}
+
+/* Menu item styling */
+.menu-item {
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 8px;
+    margin: -8px;
+}
+
+/* Card enhancements */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* Special card styling */
+.special-card {
+    animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 5px rgba(255, 193, 7, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 193, 7, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(255, 193, 7, 0.5); }
+}
+
+/* Feature icons */
+.feature-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.about-hero-icon {
+    width: 150px;
+    height: 150px;
+    font-size: 4rem;
+}
+
+.contact-icon {
+    font-size: 2rem;
+}
+
+.footer-brand-icon {
+    font-size: 1.5rem;
+}
+
+/* Enhanced button styling */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Custom navbar brand styling */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Social links hover effect */
+.social-links a {
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffc107 !important;
+    text-decoration: none;
+}
+
+/* Price badge styling */
+.price-badge {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Custom alert styling */
+.time-alert {
+    border: none;
+    background: linear-gradient(45deg, #fff3cd, #ffeaa7);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-icon-container {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hero-icon {
+        font-size: 5rem;
+    }
+    
+    .about-hero-icon {
+        width: 120px;
+        height: 120px;
+        font-size: 3rem;
+    }
+}
+
+/* Custom section spacing */
+.section-padding {
+    padding: 5rem 0;
+}
+
+.section-padding-sm {
+    padding: 3rem 0;
+}
+
+/* Enhanced typography */
+.display-title {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Custom background patterns */
+.bg-pattern-light {
+    background-image: linear-gradient(45deg, #f8f9fa 25%, transparent 25%), 
+                      linear-gradient(-45deg, #f8f9fa 25%, transparent 25%), 
+                      linear-gradient(45deg, transparent 75%, #f8f9fa 75%), 
+                      linear-gradient(-45deg, transparent 75%, #f8f9fa 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+/* Loading animation for cards */
+.card-loading {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stagger animation delays */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6c757d;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #495057;
+}
+
+/* ======================== */
+/* CUSTOM @KEYFRAMES ANIMATIONS */
+/* ======================== */
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.floating-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse Scale Animation */
+@keyframes pulseScale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.pulse-icon {
+    animation: pulseScale 2s ease-in-out infinite;
+}
+
+/* Rotate Glow Animation */
+@keyframes rotateGlow {
+    0% {
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+/* Wobble Animation */
+@keyframes wobble {
+    0% { transform: translateX(0%); }
+    15% { transform: translateX(-25px) rotate(-5deg); }
+    30% { transform: translateX(20px) rotate(3deg); }
+    45% { transform: translateX(-15px) rotate(-3deg); }
+    60% { transform: translateX(10px) rotate(2deg); }
+    75% { transform: translateX(-5px) rotate(-1deg); }
+    100% { transform: translateX(0%); }
+}
+
+/* Slide In From Different Directions */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Bounce In Effect */
+@keyframes bounceInCustom {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) rotate(-10deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05) rotate(2deg);
+    }
+    70% {
+        transform: scale(0.9) rotate(-1deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/* Flip In Animation */
+@keyframes flipInY {
+    0% {
+        transform: perspective(400px) rotateY(90deg);
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(400px) rotateY(-20deg);
+    }
+    60% {
+        transform: perspective(400px) rotateY(10deg);
+        opacity: 1;
+    }
+    80% {
+        transform: perspective(400px) rotateY(-5deg);
+    }
+    100% {
+        transform: perspective(400px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+/* Zoom In with Rotation */
+@keyframes zoomRotateIn {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(-180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/* Typewriter Effect */
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Gradient Background Animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Neon Glow Effect */
+@keyframes neonGlow {
+    0%, 100% {
+        text-shadow: 
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 15px #ffc107,
+            0 0 20px #ffc107;
+    }
+    50% {
+        text-shadow: 
+            0 0 2px #fff,
+            0 0 5px #fff,
+            0 0 8px #ffc107,
+            0 0 12px #ffc107;
+    }
+}
+
+/* ======================== */
+/* ENHANCED BUTTON ANIMATIONS */
+/* ======================== */
+
+.animated-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.animated-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s;
+}
+
+.animated-btn:hover::before {
+    left: 100%;
+}
+
+.animated-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.animated-btn:active {
+    transform: translateY(-2px) scale(1.02);
+    animation: shake 0.5s;
+}
+
+/* ======================== */
+/* ENHANCED CARD ANIMATIONS */
+/* ======================== */
+
+.card {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 193, 7, 0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+    z-index: 1;
+}
+
+.card:hover::before {
+    transform: translateX(100%);
+}
+
+.card:hover {
+    transform: translateY(-15px) rotateX(5deg);
+    box-shadow: 
+        0 20px 40px rgba(0,0,0,0.2),
+        0 0 30px rgba(255, 193, 7, 0.3);
+}
+
+.card-body {
+    position: relative;
+    z-index: 2;
+}
+
+/* Special Card Enhanced Animation */
+.special-card {
+    position: relative;
+    background: linear-gradient(45deg, #fff3cd, #ffeaa7, #fff3cd);
+    background-size: 400% 400%;
+    animation: gradientShift 4s ease infinite;
+}
+
+.special-card:hover {
+    animation: gradientShift 1s ease infinite, wobble 0.8s;
+}
+
+/* ======================== */
+/* SCROLL-TRIGGERED ANIMATIONS */
+/* ======================== */
+
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.scroll-animate.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-animate.slide-left {
+    transform: translateX(-50px);
+}
+
+.scroll-animate.slide-right {
+    transform: translateX(50px);
+}
+
+.scroll-animate.animated.slide-left,
+.scroll-animate.animated.slide-right {
+    transform: translateX(0);
+}
+
+/* ======================== */
+/* MENU ITEM HOVER EFFECTS */
+/* ======================== */
+
+.menu-item {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 193, 7, 0.2), transparent);
+    transition: left 0.4s;
+}
+
+.menu-item:hover::before {
+    left: 100%;
+}
+
+.menu-item:hover {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    transform: translateX(10px) scale(1.02);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ======================== */
+/* NAVBAR ANIMATIONS */
+/* ======================== */
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(33, 37, 41, 0.95) !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background: #ffc107;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107 !important;
+    transform: translateY(-2px);
+}
+
+/* ======================== */
+/* LOADING SPINNER */
+/* ======================== */
+
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ======================== */
+/* ENHANCED PRICE BADGES */
+/* ======================== */
+
+.price-badge {
+    font-size: 0.9rem;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    animation: pulseScale 3s ease-in-out infinite;
+}
+
+.price-badge::before {
+    content: '₹';
+    position: absolute;
+    left: -20px;
+    animation: slideInFromLeft 2s ease infinite;
+}
+
+/* ======================== */
+/* CONTACT CARD ANIMATIONS */
+/* ======================== */
+
+.contact-icon {
+    font-size: 2rem;
+    transition: all 0.4s ease;
+}
+
+.card:hover .contact-icon {
+    transform: rotateY(360deg) scale(1.2);
+    color: #ffc107 !important;
+}
+
+/* ======================== */
+/* FOOTER ANIMATIONS */
+/* ======================== */
+
+.social-links a {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: #ffc107 !important;
+    text-decoration: none;
+    transform: translateY(-3px) rotate(5deg) scale(1.1);
+}
+
+.footer-brand-icon {
+    animation: rotateGlow 10s linear infinite;
+}
+
+/* ======================== */
+/* RESPONSIVE ANIMATIONS */
+/* ======================== */
+
+@media (max-width: 768px) {
+    .card:hover {
+        transform: translateY(-10px) scale(1.02);
+    }
+    
+    .animated-btn:hover {
+        transform: translateY(-3px) scale(1.03);
+    }
+    
+    .floating-icon {
+        animation-duration: 4s;
+    }
+}
+
+/* ======================== */
+/* UTILITY ANIMATION CLASSES */
+/* ======================== */
+
+.fade-in {
+    animation: fadeInUp 0.8s ease;
+}
+
+.slide-in-left {
+    animation: slideInFromLeft 0.8s ease;
+}
+
+.slide-in-right {
+    animation: slideInFromRight 0.8s ease;
+}
+
+.bounce-in {
+    animation: bounceInCustom 0.8s ease;
+}
+
+.zoom-in {
+    animation: zoomRotateIn 0.8s ease;
+}
+
+.flip-in {
+    animation: flipInY 0.8s ease;
+}
+
+/* Delay Classes */
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1.0s; }

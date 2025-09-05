@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Vista Restaurant - Authentic Italian Cuisine</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-cup-hot-fill"></i> Bella Vista
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-primary text-white py-5 hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Welcome to Bella Vista</h1>
+                    <p class="lead mb-4">Experience authentic Italian cuisine in the heart of India. From traditional pasta dishes to wood-fired pizzas, we bring Italy to your table with Indian hospitality.</p>
+                    <a href="#menu" class="btn btn-warning btn-lg me-3">
+                        <i class="bi bi-journal-text"></i> View Menu
+                    </a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg">
+                        <i class="bi bi-telephone"></i> Reserve Table
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center hero-icon-container">
+                        <i class="bi bi-shop text-primary hero-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark">Our Menu</h2>
+                <p class="lead text-muted">Discover our carefully crafted dishes made with the finest ingredients</p>
+            </div>
+            
+            <!-- Menu Categories -->
+            <div class="row g-4">
+                <!-- Appetizers -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-cup"></i> Appetizers
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="menu-item mb-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Bruschetta Classica</h6>
+                                        <p class="text-muted small mb-1">Fresh tomatoes, basil, garlic on toasted bread</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹749</span>
+                                </div>
+                            </div>
+                            <div class="menu-item mb-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Antipasto Platter</h6>
+                                        <p class="text-muted small mb-1">Cured meats, cheeses, olives, and peppers</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹1,399</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Calamari Fritti</h6>
+                                        <p class="text-muted small mb-1">Crispy fried squid with marinara sauce</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹1,099</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Courses -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-bowl-hot"></i> Main Courses
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="menu-item mb-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Spaghetti Carbonara</h6>
+                                        <p class="text-muted small mb-1">Classic Roman pasta with eggs, cheese, pancetta</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹1,599</span>
+                                </div>
+                            </div>
+                            <div class="menu-item mb-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Osso Buco</h6>
+                                        <p class="text-muted small mb-1">Braised veal shanks with saffron risotto</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹2,399</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Chicken Parmigiana</h6>
+                                        <p class="text-muted small mb-1">Breaded chicken with marinara and mozzarella</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹1,899</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizzas -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-header bg-danger text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-circle"></i> Wood-Fired Pizzas
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="menu-item mb-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Margherita</h6>
+                                        <p class="text-muted small mb-1">San Marzano tomatoes, mozzarella, fresh basil</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹1,399</span>
+                                </div>
+                            </div>
+                            <div class="menu-item mb-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Quattro Stagioni</h6>
+                                        <p class="text-muted small mb-1">Four seasons with artichokes, ham, mushrooms, olives</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹1,799</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Prosciutto e Rucola</h6>
+                                        <p class="text-muted small mb-1">Prosciutto, arugula, cherry tomatoes, parmesan</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹2,099</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-cake2"></i> Desserts
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="menu-item mb-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Tiramisu</h6>
+                                        <p class="text-muted small mb-1">Classic Italian coffee-flavored dessert</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹749</span>
+                                </div>
+                            </div>
+                            <div class="menu-item mb-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Gelato</h6>
+                                        <p class="text-muted small mb-1">Vanilla, chocolate, or pistachio</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹599</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Cannoli Siciliani</h6>
+                                        <p class="text-muted small mb-1">Crispy shells filled with sweet ricotta</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹699</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-header bg-secondary text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-cup-straw"></i> Beverages
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="menu-item mb-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Italian Wines</h6>
+                                        <p class="text-muted small mb-1">Chianti, Pinot Grigio, Prosecco</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹699-1299</span>
+                                </div>
+                            </div>
+                            <div class="menu-item mb-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Italian Coffee</h6>
+                                        <p class="text-muted small mb-1">Espresso, Cappuccino, Macchiato</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹249-399</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="fw-bold">Soft Drinks</h6>
+                                        <p class="text-muted small mb-1">Coke, Sprite, Orange, Sparkling Water</p>
+                                    </div>
+                                    <span class="badge bg-primary price-badge">₹249</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Offer Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow border-warning border-3 special-card">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-star-fill"></i> Today's Special
+                            </h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="text-warning mb-3">Chef's Choice</h4>
+                            <h6 class="fw-bold">Seafood Risotto</h6>
+                            <p class="text-muted">Creamy Arborio rice with fresh seafood, white wine, and herbs</p>
+                            <div class="mb-3">
+                                <span class="text-decoration-line-through text-muted">₹2,299</span>
+                                <span class="h4 text-danger ms-2">₹1,899</span>
+                            </div>
+                            <div class="alert alert-warning time-alert" role="alert">
+                                <small><i class="bi bi-clock"></i> Available until 9 PM only!</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4 display-title">About Bella Vista</h2>
+                    <p class="lead section-subtitle">For over 30 years, Bella Vista has been serving authentic Italian cuisine with passion and tradition in India.</p>
+                    <p>Our chefs use only the finest ingredients imported directly from Italy, combined with locally sourced Indian produce to create unforgettable dining experiences. From our wood-fired oven to our homemade pasta, every dish tells the story of Italian culinary heritage with Indian warmth.</p>
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary rounded-circle me-3 d-flex align-items-center justify-content-center feature-icon">
+                                    <i class="bi bi-award text-white"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Award Winning</h6>
+                                    <small class="text-muted">Best Italian Restaurant 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-success rounded-circle me-3 d-flex align-items-center justify-content-center feature-icon">
+                                    <i class="bi bi-people text-white"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Family Owned</h6>
+                                    <small class="text-muted">Three generations of tradition</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="bg-light rounded p-4">
+                        <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3 about-hero-icon">
+                            <i class="bi bi-house-heart text-white"></i>
+                        </div>
+                        <h5 class="fw-bold">Family Tradition</h5>
+                        <p class="text-muted">Passed down through generations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Visit Us Today</h2>
+                <p class="lead">We'd love to welcome you to our restaurant</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-secondary text-white h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-geo-alt-fill text-warning contact-icon"></i>
+                            <h5 class="card-title mt-3">Location</h5>
+                            <p class="card-text">
+                                123 MG Road<br>
+                                Connaught Place, New Delhi<br>
+                                Delhi 110001, India
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-secondary text-white h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-telephone-fill text-warning contact-icon"></i>
+                            <h5 class="card-title mt-3">Contact</h5>
+                            <p class="card-text">
+                                Phone: +91 11 4567-8900<br>
+                                Email: info@bellavista.com<br>
+                                Reservations: +91 11 4567-8901
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-secondary text-white h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-clock-fill text-warning contact-icon"></i>
+                            <h5 class="card-title mt-3">Hours</h5>
+                            <p class="card-text">
+                                Monday - Thursday: 12PM - 11PM<br>
+                                Friday - Saturday: 12PM - 12AM<br>
+                                Sunday: 12PM - 10PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-cup-hot-fill text-warning me-2 footer-brand-icon"></i>
+                        <span class="fw-bold">Bella Vista Restaurant</span>
+                    </div>
+                    <small class="text-muted">Authentic Italian cuisine since 1993</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3 text-decoration-none">
+                            <i class="bi bi-facebook"></i> Facebook
+                        </a>
+                        <a href="#" class="text-white me-3 text-decoration-none">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a>
+                        <a href="#" class="text-white text-decoration-none">
+                            <i class="bi bi-twitter"></i> Twitter
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <small class="text-muted">&copy; 2024 Bella Vista. All rights reserved.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Smooth scrolling for navigation links -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
